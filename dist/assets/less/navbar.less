@@ -1,0 +1,42 @@
+// main: style.less
+.navbar {
+    height: 6rem;
+    margin: 0;
+    padding: 0;
+    background-color:@bc-darck;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: space-between;
+    align-self:center;
+    padding: 2rem 0;
+    // margin: 0;
+
+    a {
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        color: rgba(255, 255, 255, 0.7);
+
+        &:hover {
+            color:@whites;
+            transition: linear 0.1s;
+        }
+    }
+}
+
+.nav_list-li::after {
+    content: '';
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  background: @gray;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.nav_list-li:hover::after {
+    width: 100%;
+  }

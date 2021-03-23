@@ -1,0 +1,265 @@
+// main: style.less
+
+@media (max-width: 1024px) {
+
+    .nav_list {
+        justify-content: space-around;
+    }  
+
+    .logo_text {
+        display: none;
+    }
+
+    .header_tools {
+        justify-content: space-around;
+    }
+
+    .logo_block {
+        justify-content: center;
+    }
+
+    .catalog_title {
+        padding-left: 20px;
+    }
+
+    // Card---------------------
+
+    .card_flex {
+        justify-content: space-around;
+    } 
+
+    .cards_grid {
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap:4rem;
+    }
+
+    .about_block {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer_flex {
+        flex-wrap: wrap;
+    }
+
+    .priorities_title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about_shop_title {
+        text-align: center;
+    }
+
+    .catalog {
+        .btn {
+            margin-left: 20px;
+        }
+    }
+
+    .content_shop {
+        padding: 0 2rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (max-width: 992px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .contacts {
+        width: 30%;
+    }
+
+    .contacts a, .viber{
+        display: none;
+    }
+
+    .menu__btn {
+        display: none;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width: 769px) {
+    // Header
+    .contacts {
+        display: none;
+    }
+
+    .icon_cart {
+        border-left: none;
+    }
+
+    
+// Search ------------------
+    .search {
+       max-width: 25rem;
+    }
+
+    .search .submit {
+        right: 50%;
+    }
+
+    .search .input {
+        width: 50%;
+    }
+
+    // Banner 
+    .catalog .catalog_title {
+        font-size: 4rem;
+    }
+
+    // About
+    .about_shop {
+        padding: 5rem 0;
+    }
+
+    // Footer 
+    .footer_flex {
+        padding: 0;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .menu__btn {
+        display: flex;
+    }
+
+    .menu__btn {
+        display: flex;
+    }
+
+    .navtop {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .search {
+       width: 1rem;
+    }
+
+    .search .input {
+        display: none;
+    }
+
+    .icon_cart {
+        border-left: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .logo_block .logo_tv {
+        margin-left: 8px;
+        margin-right: 2rem;
+    }
+
+    // Maine------------------
+    .container {
+        padding: 0 1rem;
+    }
+
+    .catalog {
+        width: 50%;
+    }
+
+    .catalog .catalog_title {
+        height: 10rem;
+        font-size: 2.8rem;
+        line-height: 1.17;
+    }
+
+    .newproducts {
+        padding-bottom: 4rem;
+    }
+
+    .todayprice {
+        padding: 4rem 0;
+    }
+
+    .cards_grid {
+        padding: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5rem;
+    }
+
+    .title_h3-style {
+        font-size: 2.5rem;
+    }
+
+    .product-thumb {
+        max-width: 15rem;
+        overflow: hidden;
+    }
+
+    .newproducts_img {
+        max-width: 15rem;
+    }
+
+    .img-respons {
+        width: 100%;
+    }
+
+    .compare_icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .caption_title {
+        a {
+            font-size: 1.2rem;
+        } 
+    }
+
+    .price {
+        justify-content: space-around;
+    }
+
+    .price-tax {
+        font-size: 1.6rem;
+    }
+
+    .price_btn {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .content_shop {
+        padding: 0;
+    }
+
+    .priorities {
+        padding-top: 4rem;
+    }
+
+    // Footer-------
+
+    .footer_flex {
+        // justify-content: space-around;
+    }
+
+    .footer_col {
+        margin: 0;
+        margin-bottom: 1.4rem;
+    }
+
+    .flex-col {
+        display: flex;
+    }
+}
+
+    

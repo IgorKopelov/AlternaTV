@@ -1,0 +1,423 @@
+// main: style.less
+
+.cardcargo_title {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 100%;
+
+    margin-bottom: 30px;
+}
+
+.cardcargo_intro {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.intro_slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+
+    cursor: pointer;
+
+    &-btn {
+        width: 15px;
+        height: 10px;
+        outline: none;
+        border:none;
+        background:@whites url(../icons/arrov_top.svg) center no-repeat;
+
+        cursor: pointer;
+    }
+
+    .btn-botom {
+        background:@whites url(../icons/arrov_bottom.svg) center no-repeat;
+    }
+
+    &-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 90px;
+        height: 75px;
+        border: 2px solid #F8F8F8;
+        border-radius: 5px;
+        opacity: 0.5;
+
+        margin: 10px auto;
+    }
+
+    .visited{
+        opacity: 1;
+    }
+}
+
+.intro_img-block {
+    width: 570px;
+
+    border: 2px solid #F8F8F8;
+    border-radius: 5px;
+
+    .intro_label {
+        display: flex;
+        
+        padding: 10px;
+        padding-bottom: 30px;
+
+        .cards_label {
+            margin-right: 5px;
+        }
+    }
+
+    .intro_img {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+// intro elem ----------------------------
+
+.intro_elem {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 70% 30%;
+    width: 470px; 
+}
+
+.intro_elem-header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-bottom:3px solid #F3F3F3;
+    margin-bottom: 20px;
+}
+
+.elem_star {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .star_flex {
+        display: flex;
+        align-items: center;
+        a {
+            font-size: 1.4rem;
+            line-height: 1.7;
+
+            margin-left: 8px;
+        }
+     }
+    
+    .elem_code {
+        font-size: 14px;
+        line-height: 17px;
+        color:@gray;
+        .code {
+            color: @darck-gray;
+        }
+    }
+}
+
+.elem_stock {
+    display: flex;
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: #2CCD76;
+
+    .stock_arrov {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1px solid #2CCD76;
+
+        margin-right: 5px;
+        background:url(../icons/arrov\ green.svg) center no-repeat;
+    }
+}
+
+.elem_diagonal {
+    display: flex;
+    align-items: center;
+
+    h4 {
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 1.6;
+        color: @black;
+
+        padding-right: 10px; 
+    }
+
+    .diagonal_style {
+        width: 50px;
+        height: 30px;
+        margin-right: 5px;
+
+        border-radius: 15px;
+        border: 2px solid #F8F8F8;
+        outline: none;
+        background:@whites;
+
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.7;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: #5B5B5E;
+        &:hover {
+            color: @orange;
+            border: 2px solid @orange;
+            cursor: pointer;
+            transition: 0.5s linear;
+        }
+        &:checked {
+            color: @orange;
+            border: 2px solid @orange; 
+        }
+    }
+}
+
+.elem_prise {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .price-tax {
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+
+    .discount {
+        font-size: 1.8rem;
+    }
+}
+
+.elem_comparison {
+    display: flex;
+    align-items: center; 
+
+    font-size: 1.2rem;
+    line-height: 1.4;
+
+    a {
+        display: flex;
+        padding-left: 10px;
+    }
+
+}
+
+.btn--elem {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:15px 20px;
+
+    width: 150px;
+    height: 50px;
+
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.8;
+
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
+}
+
+// ---------------------------
+.intro_elem-inform {
+    display: flex;
+    flex: 33.333% 33.333% 33.333%;
+}
+
+.inform {
+    display: flex;
+    flex-direction: column;
+    &_title {
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 1.7;
+
+        margin-bottom: 5px;
+    }
+
+    &_text {
+        font-size: 1.2rem;
+        line-height: 130%;
+        color:gray;
+    }
+}
+
+// cardcargo_description -----------
+
+.cardcargo_description {
+    margin-bottom: 40px;
+}
+
+.descript_title {
+    font-size: 20px;
+    line-height: 24px;
+
+    margin-bottom: 20px;
+}
+
+// autro_nav ---------------------
+
+.autro_nav {
+    display: flex;
+
+    height: 50px;
+    width: 100%;
+    background: @white;
+    border-radius: 5px;
+    
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color:@gray; 
+    
+    .autro_active {
+        color:@black;
+        border-bottom: 3px solid #E3E3E3;
+    }
+
+    .autro_nav-character {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 50%;
+        height: 100%;
+    }
+
+    .autro_nav-reviews {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 50%;
+        height: 100%;
+    }
+    
+}
+
+.autro_inform {
+    display: flex;
+    flex-direction: column;
+}
+
+// autro_inform -----------
+
+.autro_inform {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 430px;
+
+    border-bottom: 5px solid #F3F3F3;
+    
+}
+
+.inform_param {
+    display: flex;
+    align-items: center;
+
+    height: 20%;
+
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4;
+
+    &-title {
+        color:@black;
+        margin-right: 5px;
+    }
+    &-disable {
+        color: @gray;
+        font-weight: 400;
+    }
+}
+
+// inform_param-table-----------
+
+.inform_param-table1 {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    height: 100%;
+}
+
+.inform_param-table {
+    display: flex;
+    justify-content: flex-start;
+
+    height: 100%;
+}
+
+.table_left {
+    width: 50%;
+}
+
+.table_right {
+    width: 50%;
+}
+
+
+.table_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 470px;
+    height: 50px;
+
+    border-bottom: 2px solid #F3F3F3;
+
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7;
+
+    &-title {
+        color:@black;
+    }
+
+    &-text {
+        color: @gray;
+    }
+}
+
+// .rating_block {
+//     width: 125px;
+//     height: 25px;
+//   }
+  .rating_block input[type="radio"] {
+    display: none;
+  }
+
+  .label_rating {
+    float: right;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url(../icons/Star\ 5.svg) no-repeat 50% 0;
+    cursor: pointer;
+  }
+
+  /*Пишем правила смены положения background-а*/
+  .rating_block .label_rating:hover, /*Правило для ховера на текущий лейбл*/
+  .rating_block .label_rating:hover ~ .label_rating, /*Правило для всех следующих лейблов по DOM дереву*/
+  .rating_block input[type="radio"]:checked ~ .label_rating /*Правило для всех следующих лейблов после выбранного инпута, чтобы звездочки как бы зафиксировались*/
+  {
+    // background-position: 50% -25px;
+    background:url(../icons/Star\ orang.svg) no-repeat;
+    transition: linear .3s;
+  }

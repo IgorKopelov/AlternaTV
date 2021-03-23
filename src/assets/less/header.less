@@ -1,0 +1,172 @@
+// main: style.less
+.header {
+    width: 100%;
+    height: 10rem;
+    margin: 0;
+    padding: 2rem 0;
+}
+
+.logo_block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        &_tv {
+            margin-left: 10px;
+            background:url(../icons/TV.svg) no-repeat center;
+        }
+
+        &_link {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.header_tools {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_block {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+
+    .logo_text {
+        color:@gray;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        margin-right: 25px;
+    }
+}
+
+// Search------------------
+
+.search {
+    width: 37rem;
+    height: 4.6rem;
+    position: relative;
+    
+    input {
+        border: none;
+    }
+} 
+
+.search .input {
+	width: 100%;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    
+    border: 1px solid #D4D4D4;
+	border-radius: 0.5rem;
+
+	background:@whites;
+	color:@darck-gray;
+	outline: none;
+}
+
+.search .input:focus {
+	box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+	background:@white;
+	color:@black;
+}
+
+.search .submit {
+	position: absolute;
+	top: 0;
+    right: 0;
+    
+	width: 4rem;
+	height: 100%;
+
+	cursor: pointer;
+	background: url(../icons/icon_search.svg) 50% no-repeat;
+
+	opacity: 0.6;
+}
+
+.search .submit:hover {
+    opacity: 0.9;
+    transition: linear .1s;
+}
+
+// Contact---------
+
+.contacts {
+    height: 6rem;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 2.1;
+        color: @black;
+    }
+}
+
+.viber {
+    width: 30px;
+    height: 20px;
+
+    background:url(../icons/viber.svg) center no-repeat;
+    cursor: pointer;
+}
+
+// Icon comparison, basket
+
+.icon_cart {
+    width: 70%;
+    height: 100%;
+    border-left: 2px solid #D4D4D4;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+// Basket------
+
+.basket {
+    display: flex;
+    position: relative;
+
+}
+
+.counter_block {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    right: -60%;
+    bottom: -50%;
+    z-index: 10;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius:50%;
+    border:3px @whites solid;
+    background:@blue;
+    color:@whites;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.7;
+
+    cursor: pointer;
+}

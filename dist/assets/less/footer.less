@@ -1,0 +1,62 @@
+// main: style.less
+.footer {
+
+    min-height: 350px;
+    padding-top: 4rem;
+    width: 100%;
+
+    background: #1D1D1F;
+}
+
+.footer_flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+
+    a, p {
+        font-size: 1.4rem;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    a {
+        &:hover {
+            color:@whites;
+        }
+    }
+}
+
+.footer_col {
+    margin-right: 1.6rem;
+
+    .copirite {
+        font-weight: 400;
+        color: @whites;
+        font-size: 14px;
+
+        margin-bottom: 1.5rem;
+    }
+
+    .worck {
+        margin-bottom: 1.5rem;
+    }
+
+    li {
+        margin-bottom: 1rem;
+    }
+
+}
+
+.footer_title {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: @whites;
+    margin-bottom: 1rem;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo_tv-bl {
+    background:url(../icons/TVw.svg) no-repeat center;
+}

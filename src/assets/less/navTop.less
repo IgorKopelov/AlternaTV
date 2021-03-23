@@ -1,0 +1,33 @@
+// main: style.less
+
+.navtop {
+    background-color:@white;
+    height: 4rem;
+}
+
+.navtop_list {
+    display: flex;
+    justify-content: start;
+    margin: 0;
+    padding: 1.3rem 0;
+    
+    li {
+        margin-right: 3rem;
+        &:nth-last-child {
+            margin-right: 0;
+        }
+    }
+
+    a {
+        color:@darck-gray;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+
+        &:hover {
+            color:@black;
+        }
+    }
+}
+
+
+

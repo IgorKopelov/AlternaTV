@@ -1,0 +1,380 @@
+// main: style.less
+
+.nav_category {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    span {
+        font-size: 1.3rem;
+        line-height: 1.2;
+        color:@gray;
+        margin:4px;
+    }
+}
+
+a:hover {
+    color:@orange;
+}
+
+.nav_category_link {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: #0066EB;
+}
+
+// Category---------------------------
+
+.category_grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap:30px;
+    height: 1470px;
+    overflow: hidden;
+}
+
+.sortcategory {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    width: 270px;
+    border-radius: 5px;
+    
+    background-color:@white;
+    overflow: hidden;
+}
+
+// Acsrdeone--------------------------
+
+.accordion {
+    width: 100%;
+}
+
+.tab input, .tab-content { display: none;}
+
+.tab {
+    
+    border-bottom: 1px solid #E3E3E3;
+    margin-bottom: 10px; 
+}
+
+.tab-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 20px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7;
+    color:@black;
+
+    cursor: pointer;
+}
+
+.tab-title::after {
+    content: url(../icons/arrov_bottom.svg); 
+}
+
+.tab-content {
+    padding: 15px 20px;
+}
+
+.tab :checked + .tab-title::after {
+    content: url(../icons/arrov_top.svg);
+}
+
+.tab :checked ~ .tab-content {
+    display: block;
+}
+
+// ---------------------------------------
+
+.sortcategory_header-block {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 300px;
+    padding: 30px 20px;
+
+    border-bottom: 1px solid #E3E3E3
+}
+
+.category_param {
+    display: flex;
+    flex-direction: column;
+}
+
+.category_param_title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.1;
+    color:@black;
+
+    margin-bottom: 20px;
+}
+
+.rang_title {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+}
+
+.input_range {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px ;
+
+    
+}
+
+.line-before{
+    width: 12px;
+    height: 1px;
+    background-color:#515154;
+}
+
+.sortcategory_rang {
+    display: flex;
+    flex-direction: column;
+
+    .limit {
+        width: 100px;
+        height: 40px;
+
+        background: #FFFFFF;
+        border: 1.5px solid #D4D4D4;
+        border-radius: 3px;
+
+        outline:none;
+    }
+}
+
+// TV--------------------
+
+.tv {
+    padding: 0;
+    height: 1470px;
+}
+
+.tv_sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .tv_sort_title {
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 100%;
+        color:@black;
+    }
+
+    .tv_sort_label {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        color: #86868B;
+        margin-right: 10px;
+    }
+
+    .tv_sort-nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    }
+    .tv_select {
+        display: block;
+        outline: none; 
+        width: 180px;
+        height: 40px;
+
+        .tv_option {
+            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 1.4;
+            color:@black;
+
+            background-color:@white;
+            height: 40px;
+        }
+
+        text-align: center;
+        border: 1px solid #D4D4D4 ;
+        border-radius: 3px;
+    }
+
+.tv_cards {
+    display: grid;
+    grid-template-columns: 270px 270px 270px;
+    grid-gap:30px;
+    overflow: hidden;
+}
+
+.cat_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    border-bottom: 1px solid #E3E3E3;
+    width: 100%;
+    height: 100%;
+    padding: 20px 25px;
+
+    .cat_block-header {
+        display: flex;
+    }
+}
+
+.cat_link-all {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    text-decoration-line: underline;
+    color:@blue;
+}
+
+// Checbox
+
+.cat_block_title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+    color:@black;
+}
+
+.checkbox {
+    margin-bottom: 15px;
+}
+
+/* для элемента input c type="checkbox" */
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  /* для элемента label, связанного с .custom-checkbox */
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.custom-checkbox+label::before {
+content: '';
+display: inline-block;
+width: 22px;
+height: 22px;
+flex-shrink: 0;
+flex-grow: 0;
+border: 1px solid #D4D4D4;
+border-radius: 3px;
+margin-right: 0.5em;
+background-repeat: no-repeat;
+background-position: center center;
+background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+    color: #b3d7ff;
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active + label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox:focus + label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked)+label::before {
+    border-color: #80bdff;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url(../icons/check_arroy.svg);
+}
+
+.custom-checkbox:disabled+label::before {
+    background-color:@darck-gray;
+}
+
+  .label_style {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color:@darck-gray;
+
+    cursor: pointer;
+  }
+
+  .label_active {
+    font-weight: 500;
+    color:@black;
+}
+
+// Nav product_card-nav-----
+
+.product_card-nav {
+    width: 400px;
+}
+
+.card-nav_flex {
+    display: flex;
+
+    padding-left: 300px;
+    padding-top: 30px;
+}
+
+.nav_list-style {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+
+    border:1px solid #D4D4D4;
+    border-radius: 3px;
+    background:@whites;
+
+    color:@black;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.7;
+
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+        border:1px solid @orange;
+    }
+}
+
+.activ_btn {
+    background-color:@orange;
+    color:@whites;
+}
+
+.next,
+.prev {
+    background-color:@white;
+}
+
+.next::after {
+    content:url(../icons/arrov_right.svg);
+}
+
+.prev::before {
+    content: url(../icons/arrov_laft.svg);
+}
