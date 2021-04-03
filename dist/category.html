@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/less/style.css">
     <link rel="stylesheet" href="./assets/font/..">
+    <link rel="icon" href="/src/assets/icons/favicon.ico" type="image/x-icon">
     <title>Category</title>
 </head>
 
@@ -23,22 +24,24 @@
     </div>
 
     <header class="header">
-
         <div class="container">
             <div class="header_tools">
 
                 <div class="logo_block">
                     <div class="logo">
-                        <a href="#"><img src="#" alt="logo">Alfa Raketa</a>
+                        <a class="logo_link" href="#">
+                            <img src="../src/assets/icons/Alterna.svg" alt="logo">
+                            <img class="logo_tv" src="../src/assets/icons/Subtract.svg" alt="#">
+                        </a>
                     </div>
-                    <p class="logo_text">Интернет-магазин бытовой техники</p>
+                    <p class="logo_text">Интернет-магазин <br> бытовой техники</p>
                 </div>
-
+                
                 <div class="search">
                     <div class="search_block">
                         <form action="" method="post" class="search">
-                            <input type="search" name="search" placeholder="Поиск товаров..." class="input" />
-                            <input type="submit" name="search" value="" class="submit"/>
+                            <input id="search" type="search" name="search" placeholder="Поиск товаров..." class="input" value=""/>
+                            <input type="submit" name="search" class="submit" value=""/>
                         </form>
                     </div>
                 </div>
@@ -62,11 +65,34 @@
                             <svg class="basket_svg" width="40" height="40" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.68502 35.0442C0.946351 35.3444 1.26902 35.5851 1.63126 35.7499C1.99351 35.9148 2.3869 36.0001 2.7849 36H29.0317C29.4298 36.0001 29.8233 35.9148 30.1856 35.7499C30.548 35.585 30.8708 35.3443 31.1322 35.044C31.3936 34.7438 31.5876 34.391 31.7011 34.0094C31.8146 33.6278 31.8449 33.2263 31.7901 32.832L28.8468 11.6076C28.752 10.9428 28.4212 10.3342 27.9147 9.89319C27.4082 9.45215 26.76 9.20806 26.0884 9.20553H5.72854C5.05684 9.208 4.40846 9.4521 3.90191 9.89323C3.39536 10.3344 3.06448 10.943 2.96973 11.608L0.0264492 32.832C-0.0282949 33.2264 0.00216296 33.6279 0.115769 34.0095C0.229375 34.3912 0.423488 34.744 0.68502 35.0442ZM1.58289 33.0483L4.52617 11.824C4.56741 11.5341 4.71159 11.2687 4.93236 11.0764C5.15313 10.8841 5.43575 10.7776 5.72854 10.7765H26.0884C26.3812 10.7775 26.6639 10.8839 26.8847 11.0761C27.1056 11.2684 27.2499 11.5337 27.2912 11.8236L30.2345 33.0483C30.2582 33.2202 30.2449 33.3951 30.1953 33.5614C30.1457 33.7277 30.0611 33.8814 29.9471 34.0123C29.8332 34.1431 29.6925 34.248 29.5346 34.3199C29.3767 34.3918 29.2052 34.429 29.0317 34.429H2.7849C2.61141 34.429 2.43993 34.3918 2.28204 34.3199C2.12414 34.248 1.9835 34.1431 1.86958 34.0123C1.75566 33.8814 1.67113 33.7277 1.62167 33.5614C1.57222 33.3951 1.55899 33.2201 1.58289 33.0483Z" fill="black"/>
                                 <path d="M21.3854 7.42938C21.4886 7.42941 21.5907 7.40911 21.6861 7.36964C21.7814 7.33018 21.868 7.27232 21.9409 7.19938C22.0139 7.12643 22.0717 7.03983 22.1112 6.94452C22.1507 6.84921 22.171 6.74705 22.1709 6.64389V6.26263C22.1709 4.60168 21.5111 3.00875 20.3366 1.83428C19.1622 0.659811 17.5693 0 15.9083 0C14.2473 0 12.6544 0.659811 11.4799 1.83428C10.3055 3.00875 9.64567 4.60168 9.64567 6.26263V6.64389C9.64567 6.85222 9.72842 7.05201 9.87573 7.19932C10.023 7.34662 10.2228 7.42938 10.4312 7.42938C10.6395 7.42938 10.8393 7.34662 10.9866 7.19932C11.1339 7.05201 11.2166 6.85222 11.2166 6.64389V6.26263C11.2166 5.64651 11.338 5.03643 11.5738 4.46721C11.8096 3.898 12.1551 3.38079 12.5908 2.94513C13.0265 2.50947 13.5437 2.16389 14.1129 1.92811C14.6821 1.69233 15.2922 1.57098 15.9083 1.57098C16.5244 1.57098 17.1345 1.69233 17.7037 1.92811C18.2729 2.16389 18.7901 2.50947 19.2258 2.94513C19.6615 3.38079 20.007 3.898 20.2428 4.46721C20.4786 5.03643 20.5999 5.64651 20.5999 6.26263V6.64389C20.5999 6.74705 20.6202 6.84921 20.6597 6.94452C20.6992 7.03983 20.757 7.12643 20.83 7.19938C20.9029 7.27232 20.9895 7.33018 21.0848 7.36964C21.1801 7.40911 21.2823 7.42941 21.3854 7.42938Z" fill="black"/>
-                                </svg>
+                            </svg>
                         </a>
                         <div class="counter_block"><span class="counter">2</span></div>
                     </div>
                 </div> <!--icon_cart-->
+
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                      <span></span>
+                    </label>
+
+                     <ul class="menu__box">
+                        <li><a class="menu__item" href="#">Телевизоры</a></li>
+                        <li><a class="menu__item" href="#">Смартфоны</a></li>
+                        <li><a class="menu__item" href="#">Ноутбуки</a></li>
+                        <li><a class="menu__item" href="#">Аудио</a></li>
+                        <li><a class="menu__item" href="#">Бытовая</a></li>
+                        <li><a class="menu__item" href="#">Аксессуары</a></li>
+                        <ul class="menu_line">
+                            <li><a class="menu__item" href="#">О компании</a></li>
+                            <li><a class="menu__item" href="#">Доставка и оплата</a></li>
+                            <li><a class="menu__item" href="#">Блог</a></li>
+                            <li><a class="menu__item" href="#">Контакты</a></li>
+                         </ul>
+                         <a  class="menu__item" href="tel:+38(063)123-45-67">+38 (095) 407-66-47</a>
+                      </ul>
+                  </div> <!--hamburger-menu-->
 
             </div> <!--header_tools-->
         </div> <!--container-->
@@ -252,6 +278,9 @@
                     <div class="tv_sort">
                         <h1 class="tv_sort_title">Телевизоры</h1>
                         <div class="tv_sort-nav">
+                            <button class="tv_filter_btn">
+                                <span class="filter_icon">Фильтры</span>
+                            </button>
                             <label class="tv_sort_label" for="sort">Сортировать по</label>
                             <select class="tv_select" name="sort" id="sort">
                                 <option class="tv_option" value="value1">Акционные</option> 
@@ -673,8 +702,10 @@
 
                             </div>
                         </div> <!--product_card-->
+                    </div> <!--tv_cards-->
 
-                    </div>
+                    <button class="loading_card">Показать еще <span></span></button>
+
                 </div> <!--TV-->
             </div> <!--category_grid-->
         </div> <!--container-->

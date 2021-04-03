@@ -167,32 +167,38 @@ a:hover {
     align-items: center;
     margin-bottom: 2rem;
 
-    .tv_sort_title {
-        font-weight: 500;
-        font-size: 3rem;
-        line-height: 100%;
-        color:@black;
+        .tv_sort_title {
+            font-weight: 500;
+            font-size: 3rem;
+            line-height: 100%;
+            color:@black;
+        }
+
+        .tv_sort_label {
+            font-size: 1.2rem;
+            line-height: 1.4;
+            color: #86868B;
+            margin-right: 1rem;
+        }
+
+        .tv_sort-nav {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
     }
 
-    .tv_sort_label {
-        font-size: 1.2rem;
-        line-height: 1.4;
-        color: #86868B;
-        margin-right: 1rem;
-    }
 
-    .tv_sort-nav {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    }
     .tv_select {
         display: block;
         outline: none; 
-        width: 18rem;
+        width: 19rem;
         height: 4rem;
+
+        background: #FFFFFF;
+        border: 1px solid #D4D4D4;
+        border-radius: 3px;
 
         .tv_option {
             font-weight: 500;
@@ -216,6 +222,33 @@ a:hover {
     overflow: hidden;
 }
 
+.tv_filter_btn {
+    display: none;
+    max-width: 100%;
+    width: 14rem;
+    height: 4rem;
+
+    font-weight: 500;
+    font-size: 1.2rem;
+    color:  #0066EB;
+
+
+    border-radius: 3px;
+    background: rgba(0, 102, 235, 0.1);
+
+    .filter_icon {
+        display: flex;
+        justify-content: center;
+    }
+
+    .filter_icon::before {
+        content: url('/src/assets/icons/filterIcon.svg');
+        margin-right: 1rem;
+        width: 1.7rem;
+        height: 1rem;
+    }
+}
+
 .cat_block {
     display: flex;
     flex-direction: column;
@@ -236,6 +269,27 @@ a:hover {
     line-height: 1.7;
     text-decoration-line: underline;
     color:@blue;
+}
+
+.loading_card {
+    display: none;
+    min-width: 34rem;
+    height: 5rem;
+
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.7;
+
+    color: #0066EB;
+    background: #E5F0FD;
+    border-radius: 3px;
+
+    span::after {
+        content: url('/src/assets/icons/arrovBotomBlue.svg') ;
+
+        width: 1rem;
+        height: 0.6rem;
+    }
 }
 
 // Checbox

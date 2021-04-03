@@ -226,6 +226,8 @@
     .tv_cards {
         grid-template-columns: 1fr 1fr;
         grid-gap: 1rem;
+
+        margin-bottom: 2rem;
     }
 
     .product_card {
@@ -233,8 +235,18 @@
 
     }
 
+    .about_shop {
+        padding: 4rem 0;
+    }
+
+    .about_shop_title {
+        text-align: start;
+    }
+    
+
     .title_h3-style {
         font-size: 2.5rem;
+        margin-bottom: 2rem;
     }
 
     .product-thumb {
@@ -303,6 +315,35 @@
 
     .sortcategory {
         display: none;
+    }
+
+    .tv_sort {
+        align-items: inherit;
+        flex-direction: column;
+
+        .tv_sort_title {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .tv_sort .tv_sort_label {
+        display: none;
+    }
+
+    .tv_sort .tv_sort-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .tv_filter_btn {
+       display: block;
+    }
+
+    .loading_card {
+        display: block;
     }
 }
 

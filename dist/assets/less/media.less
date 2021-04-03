@@ -66,6 +66,12 @@
     }
 }
 
+@media (min-width: 992px) {
+    .hamburger-menu {
+        display: none;
+      }
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media (max-width: 992px) {
 
@@ -89,6 +95,7 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (max-width: 769px) {
+
     // Header
     .contacts {
         display: none;
@@ -132,6 +139,16 @@
 
 @media (max-width: 480px) {
 
+    .header {
+        height: 6.6rem;
+        padding: 0;
+
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+        background: #FFFFFF;
+        
+        z-index: 10;
+    }
+
     .menu__btn {
         display: flex;
     }
@@ -149,17 +166,21 @@
     }
 
     .search {
-       width: 1rem;
+       width: 4rem;
     }
 
     .search .input {
         display: none;
     }
 
+    .search .submit {
+        right: 0;
+    }
+
     .icon_cart {
         border-left: none;
         display: flex;
-        justify-content: flex-start;
+        // justify-content: flex-start;
         align-items: flex-end;
     }
 
@@ -168,9 +189,13 @@
         margin-right: 2rem;
     }
 
+    .comparison {
+        display: none;
+    }
+
     // Maine------------------
     .container {
-        padding: 0 1rem;
+        padding: 0 1.5rem;
     }
 
     .catalog {
@@ -197,8 +222,31 @@
         grid-gap: 1.5rem;
     }
 
+    // Category grid
+    .tv_cards {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+
+        margin-bottom: 2rem;
+    }
+
+    .product_card {
+        width: 16.5rem;
+
+    }
+
+    .about_shop {
+        padding: 4rem 0;
+    }
+
+    .about_shop_title {
+        text-align: start;
+    }
+    
+
     .title_h3-style {
         font-size: 2.5rem;
+        margin-bottom: 2rem;
     }
 
     .product-thumb {
@@ -259,6 +307,43 @@
 
     .flex-col {
         display: flex;
+    }
+
+    .product_card-nav {
+        display: none;
+    }
+
+    .sortcategory {
+        display: none;
+    }
+
+    .tv_sort {
+        align-items: inherit;
+        flex-direction: column;
+
+        .tv_sort_title {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .tv_sort .tv_sort_label {
+        display: none;
+    }
+
+    .tv_sort .tv_sort-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .tv_filter_btn {
+       display: block;
+    }
+
+    .loading_card {
+        display: block;
     }
 }
 
