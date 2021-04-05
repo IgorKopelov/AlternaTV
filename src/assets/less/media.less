@@ -124,9 +124,12 @@
     }
 }
 
-
 /* Medium devices (landscape tablets, 768px and up) */
-@media (max-width: 769px) {
+@media (max-width: 768px) {
+
+    .container {
+        padding: 0 1rem;
+    }
 
     // Header
     .contacts {
@@ -191,6 +194,32 @@
 
     .content_shop {
         padding: 0;
+    }
+
+    // Cargo block 
+    .cardcargo_intro {
+        flex-direction: column;
+    }
+
+    .intro_slider {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .intro_img-block {
+        width: 100%;
+    }
+
+    .intro_elem {
+        width: auto;
+    }
+
+    .intro_elem-header {
+        gap: 1.5rem;
+    }
+
+    .inform_param-table {
+        gap: 1rem;
     }
 
     // Footer 
@@ -258,7 +287,7 @@
 
     // Maine------------------
     .container {
-        padding: 0 1.5rem;
+        // padding: 0 1.5rem;
     }
 
     .catalog {
@@ -500,4 +529,54 @@
     .cardcargo_description > .container {
         padding: 0;
     }
+
+    // Form
+
+    .form {
+
+        margin-bottom: 2rem;
+    } 
+
+    .form_accordion {
+        max-width: 100%;
+        width: 35rem;
+    }
+    .form_input-col {
+        grid-template-columns: 1fr;
+    }
+
+    .tab-content {
+        padding: 1.5rem 0;
+    }
+
+    .price_block {
+        padding: 1.2rem;
+    }
+
+    .price_card {
+        gap: 1rem;
+    }
+
+    .price_link {
+        max-width: 15rem;
+    }
+
+    // About
+
+    .erore_inform {
+        align-items: center;
+    }
+
+    .eror_gradient {
+        font-size: 20rem;
+    }
+
+    .eror_title {
+        font-size: 200%;
+    }
+
+    .eror_img {
+        width: 70%;
+    }
+
 }
